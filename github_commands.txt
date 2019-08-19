@@ -1,0 +1,24 @@
+Install Git with Apt : 
+
+sudo apt-get update
+sudo apt-get install git
+
+Set Up Git:
+git config --global user.name "surajrevappavagoli"
+git config --global user.email "surajvagoli@gmail.com"
+
+
+
+
+
+Now create new repository and follow these commands
+
+echo "# Opencv_assignments" >> README.md    //here Opencv_assignments is repository name
+git init
+git add README.md
+git commit -m "first commit"     //this is like we are adding some comment
+git remote add origin https://github.com/surajrevappavagoli/Opencv_assignments
+# if fatal error :git remote set-url origin https://github.com/surajrevappavagoli/Opencv_assignments
+
+
+git push -u origin master
